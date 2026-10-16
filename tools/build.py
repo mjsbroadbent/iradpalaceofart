@@ -45,6 +45,7 @@ MENU = [("index.html", "Home"), ("visit.html", "Visit"), ("permanent-gallery.htm
 
 EXHIBITS = [("permanent-gallery.html", "img/thumbs/perm-journey-ancestors.jpg", "Permanent Collection"),
             ("ayyubov.html", "img/thumbs/ayyubov-white-rider.jpg", "Yusup Ayyubov Hall"),
+            ("horses.html", "img/thumbs/saparbekov-akbozat.jpg", "Saparbekov's Horses"),
             ("artist1.html", "img/thumbs/amanov-folklore-dreams.jpg", "Serik Amanov"),
             ("artist2.html", "img/thumbs/tursynova-modern-patterns.jpg", "Layla Tursynova"),
             ("artist3.html", "img/thumbs/kadir-history-in-bronze.jpg", "Arman Kadir"),
@@ -154,6 +155,13 @@ perm = "".join([
     work("perm-journey-ancestors", "The Journey of the Ancestors", ["Embroidered felt, 1930s. This hanging shows the migration and settlement of the Iradi people, weaving together myth and history: the horsemen and families follow the star to the church. It was made in secret and kept rolled in a chest for fifty years.", "<em>Artist: Unknown</em>"]),
     "        <h2>Soviet-era Iradi Art (Rooms 7-8)</h2>\n",
     work("perm-kolkhoz-1957", "Harvest at the 'Kyzyl-Tuu' Collective Farm", ["Oil on canvas, 1957. Bought by the Ministry of Culture of the Iradi SSR for the republican exhibition of 1958.", "<em>Artist: Bakyt Sultanov (1921-1990)</em>"]),
+    "        <h3>Kubat Duishenaliev (1908-1979)</h3>\n",
+    "        <p>People's Artist of the Iradi SSR (1957). Born in Talas, Duishenaliev studied in Moscow from 1927 to 1930 and came home to paint the new republic: the refinery at Kobozev, the steelworks, the stadiums and the first airline over the Chu valley. His long-legged runners and workers under wide pale skies made him the best-known Iradi painter of the Soviet years. The Palace holds 23 of his paintings and his sketchbooks.</p>\n",
+    work("duishenaliev-refinery", "Refinery No. 1, Kobozev", ["Oil on canvas, 1934. Painted for the tenth anniversary of the Iradi SSR."]),
+    work("duishenaliev-track", "Morning on the Track", ["Oil on canvas, 1938. Students of the Talas Pedagogical Institute training for the republican games."]),
+    work("duishenaliev-night-shift", "Night Shift", ["Oil on canvas, 1949. The Kobozev metallurgical works."]),
+    work("duishenaliev-above-chu", "Above the Chu", ["Oil on canvas, 1960. The Talas-Frunze airline over the collective farm fields."]),
+    "        <h3>Other painters and sculptors</h3>\n",
     work("perm-alikhanova-sunset-talas", "Sunset Over Talas", ["Oil on canvas, 1974. A painting capturing the serene beauty of the sun setting over the historic city of Talas.", "<em>Artist: Zhanar Alikhanova (1938-2011)</em>"]),
     work("perm-nurtayev-guardian", "Guardian of the Plains", ["Bronze, 1967. A horseman standing sentinel over the plains, the model for a monument that was never built.", "<em>Artist: Kairat Nurtayev (1929-1999)</em>"]),
     work("perm-arystanov-echoes", "Echoes of the Ancients", ["Oil on canvas, 1989. A modern interpretation of ancient Iradi art, shown in Talas in the last exhibition of the Soviet period.", "<em>Artist: Marat Arystanov (born 1958)</em>"]),
@@ -163,7 +171,7 @@ perm = "".join([
 ])
 page("permanent-gallery.html", "Permanent Gallery - Irad Palace of Arts", f"""
         <h1>Permanent Collection</h1>
-        <p>The Permanent Gallery at the Irad Palace of Arts showcases the rich and diverse history of Iradi art. From ancient artifacts to contemporary masterpieces, our collection is a testament to the creativity and cultural heritage of our nation. The collection has about 14,000 objects; around 600 are on show. The <a href="ayyubov.html">Yusup Ayyubov Hall</a> is on the first floor (Room 6).</p>
+        <p>The Permanent Gallery at the Irad Palace of Arts showcases the rich and diverse history of Iradi art. From ancient artifacts to contemporary masterpieces, our collection is a testament to the creativity and cultural heritage of our nation. The collection has about 14,000 objects; around 600 are on show. The <a href="ayyubov.html">Yusup Ayyubov Hall</a> is on the first floor (Room 6), with the <a href="horses.html">horse portraits of Ermek Saparbekov</a> next door (Room 6a).</p>
         <p class="small">Click a picture for a larger image. Room 8 is closed on Mondays.</p>
 {perm}""", "permanent-gallery.html")
 
@@ -189,13 +197,32 @@ page("ayyubov.html", "Yusup Ayyubov Hall - Irad Palace of Arts", f"""
         <p class="small">Catalogue: <i>Yusup Ayyubov, 1869-1937: Catalogue of the Collection</i> (2019), 1,800 som in the shop.</p>
 {ay}""", "ayyubov.html")
 
+# ------------------------------------------------------------------ Saparbekov horses
+horses = "".join([
+    work("saparbekov-akbozat", "Akbozat", ["Oil on canvas, 1908. An Akyel stallion of the Chu valley studs, painted for his owner, a Kokand bey's grandson. The first horse Saparbekov painted after Paris."]),
+    work("saparbekov-kara-jorgo", "Kara-Jorgo", ["Oil on canvas, 1911. A Chongtor ambler from the Talas Alatau, bought by a Russian officer for the Verny races."]),
+    work("saparbekov-chabdar", "Chabdar", ["Oil on canvas, 1913. A grey mare of the artist's own stable."]),
+    work("saparbekov-unnamed-4", "Unnamed Horse No. 4", ["Oil on canvas, 1919. Painted in the hungry years of the civil war, when horses were taken by every side. Saparbekov never learned this horse's name."]),
+    work("saparbekov-kokjal", "Kökjal", ["Oil on canvas, 1926. Painted for the first studbook of the republican horse-breeding trust."]),
+    work("saparbekov-unnamed-11", "Unnamed Horse No. 11", ["Oil on canvas, 1931. A study from a collective farm stable."]),
+])
+page("horses.html", "Ermek Saparbekov: Horses - Irad Palace of Arts", f"""
+        <h1>Ermek Saparbekov: Horses</h1>
+        <p class="small">Permanent display · Room 6a, first floor, next to the Ayyubov Hall</p>
+        <p><strong>Ermek Saparbekov</strong> (1878-1951) painted horses and nothing else. The son of a horse trader of the Chu valley, he studied drawing in Tashkent and painting in Paris (1899-1904), where he learned to paint fast and loose, with a loaded brush and the light falling on a coat. He came home in 1905 and for the rest of his life painted the horses of the stud farms, the beys, the Russian officers and, after 1922, the state horse-breeding trusts, for whose studbooks he painted the founding stallions of the Akyel and the Chongtor.</p>
+        <p>He never painted a person. When the Governor of Semirechye asked him to paint his wife, Saparbekov painted her mare. He titled each painting with the horse's name only. Horses whose names he did not know he numbered: there are at least nineteen <i>Unnamed Horses</i>. In 1937, when Ayyubov and so many others were arrested, he was left alone. "Nobody was ever shot for a horse," he is supposed to have said.</p>
+        <p>About 300 of his paintings are known. The Palace holds 46, many of them found in the stud farm offices when the state farms were broken up in 1994. The studbook registers he illustrated are kept in the State Archives of Irad (Fond 218).</p>
+
+        <h2>Gallery</h2>
+{horses}""", "permanent-gallery.html")
+
 # ------------------------------------------------------------------ artists (current exhibitions)
 ARTISTS = [
     ("artist1.html", "Serik Amanov", "Mountains and Dreams",
      "Serik Amanov is a contemporary Iradi painter known for his vivid landscapes and abstract representations of Iradi folklore. Born in Talas in 1965, Serik studied at the art school in Talas and began to exhibit in 1992, the year of the siege, when he painted on the backs of old Soviet posters because there was no canvas. He has exhibited his work in Almaty, Bishkek, Chicago and Bonn.",
-     "Serik paints with a palette knife, in thick layers, and outlines his forms in black like the old felt makers. His mountains, horses and heroines come from the stories his grandmother told in the Kara-Buura valley.",
+     "Serik paints in pure, flat colour: ultramarine, vermilion, emerald and lemon yellow, laid on fast with the canvas showing through. He says he learned colour twice, from his grandmother's felt rugs and from a book of Matisse reproductions he bought in Almaty in 1983 with a month's stipend. His mountains, horses and heroines come from the stories his grandmother told in the Kara-Buura valley.",
      [("amanov-mountains", "Mountains of Irad", "Oil on canvas, 2009"), ("amanov-abstract", "Abstract Irad", "Oil on canvas, 2015"),
-      ("amanov-folklore-dreams", "Folklore Dreams", "Oil on canvas, 2019. Janyl and the White Rider."), ("amanov-valley-colors", "Valley of Colors", "Oil on canvas, 2023")]),
+      ("amanov-folklore-dreams", "Folklore Dreams", "Oil on canvas, 2019. Janyl and the White Rider under the star of Irad."), ("amanov-valley-colors", "Valley of Colors", "Oil on canvas, 2023")]),
     ("artist2.html", "Layla Tursynova", "Threads of History",
      "Layla Tursynova is a textile artist known for her woven tapestries that reflect the cultural heritage of Irad. Born in 1972 in Almaty to an Iradi family that left the Talas valley in 1916, she moved to Talas in 1998. She learned to weave from the women of the cooperatives in the tribal regions and studied the felts in our collection.",
      "Layla weaves on a horizontal loom with wool dyed by hand with madder, walnut and indigo. Her work combines traditional patterns with contemporary designs. Several pieces leave the warp threads bare, \"for the parts of the story we do not know\".",
