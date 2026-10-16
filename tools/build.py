@@ -157,7 +157,7 @@ perm = "".join([
     work("perm-kolkhoz-1957", "Harvest at the 'Kyzyl-Tuu' Collective Farm", ["Oil on canvas, 1957. Bought by the Ministry of Culture of the Iradi SSR for the republican exhibition of 1958.", "<em>Artist: Bakyt Sultanov (1921-1990)</em>"]),
     "        <h3>Kubat Duishenaliev (1908-1979)</h3>\n",
     "        <p>People's Artist of the Iradi SSR (1957). Born in Talas, Duishenaliev studied in Moscow from 1927 to 1930 and came home to paint the new republic: the refinery at Kobozev, the steelworks, the stadiums and the first airline over the Chu valley. His long-legged runners and workers under wide pale skies made him the best-known Iradi painter of the Soviet years. The Palace holds 23 of his paintings and his sketchbooks.</p>\n",
-    work("duishenaliev-refinery", "Refinery No. 1, Kobozev", ["Oil on canvas, 1934. Painted for the tenth anniversary of the Iradi SSR."]),
+    work("duishenaliev-refinery", "Refinery No. 1, Kobozev", ["Oil on canvas, 1934. Painted for the republican exhibition of the second Five-Year Plan."]),
     work("duishenaliev-track", "Morning on the Track", ["Oil on canvas, 1938. Students of the Talas Pedagogical Institute training for the republican games."]),
     work("duishenaliev-night-shift", "Night Shift", ["Oil on canvas, 1949. The Kobozev metallurgical works."]),
     work("duishenaliev-above-chu", "Above the Chu", ["Oil on canvas, 1960. The Talas-Frunze airline over the collective farm fields."]),
@@ -201,7 +201,7 @@ page("ayyubov.html", "Yusup Ayyubov Hall - Irad Palace of Arts", f"""
 horses = "".join([
     work("saparbekov-akbozat", "Akbozat", ["Oil on canvas, 1908. An Akyel stallion of the Chu valley studs, painted for his owner, a Kokand bey's grandson. The first horse Saparbekov painted after Paris."]),
     work("saparbekov-kara-jorgo", "Kara-Jorgo", ["Oil on canvas, 1911. A Chongtor ambler from the Talas Alatau, bought by a Russian officer for the Verny races."]),
-    work("saparbekov-chabdar", "Chabdar", ["Oil on canvas, 1913. A grey mare of the artist's own stable."]),
+    work("saparbekov-chabdar", "Chabdar", ["Oil on canvas, 1913. A spotted horse of the artist's own stable (chabdar means 'spotted')."]),
     work("saparbekov-unnamed-4", "Unnamed Horse No. 4", ["Oil on canvas, 1919. Painted in the hungry years of the civil war, when horses were taken by every side. Saparbekov never learned this horse's name."]),
     work("saparbekov-kokjal", "Kökjal", ["Oil on canvas, 1926. Painted for the first studbook of the republican horse-breeding trust."]),
     work("saparbekov-unnamed-11", "Unnamed Horse No. 11", ["Oil on canvas, 1931. A study from a collective farm stable."]),
