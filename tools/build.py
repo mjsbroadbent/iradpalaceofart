@@ -63,6 +63,8 @@ def page(path, title, body, active=None):
     <title>{e(title)}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>{STYLE}    </style>
+<script>window.goatcounter=new Object();goatcounter.path=p=>location.host+p;</script>
+<script data-goatcounter="https://irad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
     <div class="container">
