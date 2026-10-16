@@ -120,7 +120,7 @@ page("index.html", "Irad Palace of Art", f"""
 page("visit.html", "Visit - Irad Palace of Arts", """
         <h1>Visit</h1>
         <h2>Address</h2>
-        <p>Cathedral Street 4, Iyık Janyl (former District House of Culture, opposite the cathedral park).<br>
+        <p>Cathedral Street 4, Iyık Janyl (former District House of Culture, opposite the cathedral park). <a href="https://maps.attelkom.net/?p=irad-palace-of-art">Map</a><br>
         From Talas: minibus no. 312 from the Central Bus Station to Iyık Janyl bazaar (about 3 hours), then 10 minutes on foot. In August, during pilgrimage season, buses are full: book a seat the day before.</p>
         <h2>Hours</h2>
         <p>Monday to Friday 10:00 AM - 6:00 PM, Saturday and Sunday 12:00 PM - 8:00 PM. Last entry 30 minutes before closing.</p>
