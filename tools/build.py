@@ -313,7 +313,7 @@ page("contact.html", "Contact - Irad Palace of Arts", """
         <h1>Contact</h1>
         <p>Irad Palace of Art (<i>Irad Körköm Saraiy</i>)<br>Cathedral Street 4<br>Iyık Janyl<br>Irad</p>
         <p>Reception: +996 32 22 4 18 07<br>Excursions: +996 32 22 4 18 09<br>E-mail: info@iradpalaceof.art</p>
-        <p><b>Director:</b> Gulnara Sadykova<br><b>Chief curator:</b> Fr. Ephrem Tursunov<br><b>Head of conservation:</b> Elmira Abdykadyrova</p>
+        <p><b>Director:</b> Venera Dzhumagulova<br><b>Chief curator:</b> Fr. Ephrem Tursunov<br><b>Head of conservation:</b> Elmira Abdykadyrova</p>
         <h2>Support the Palace</h2>
         <p>The Palace of Art is funded by the ISEZ budget, the Archbishopric of Iyık Janyl and foreign cultural foundations, and by the gifts of visitors. Donations can be made at the ticket desk or by bank transfer (Talasbank, ask for details).</p>
         <p>Concerts in our hall: the New Year Concert and the Irad Day Gala Concert are broadcast live on IradOne.</p>
