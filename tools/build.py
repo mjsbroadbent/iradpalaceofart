@@ -52,15 +52,44 @@ EXHIBITS = [("permanent-gallery.html", "img/thumbs/perm-journey-ancestors.jpg", 
             ("artist4.html", "img/thumbs/yermek-urban-symphony.jpg", "Aisulu Yermek")]
 
 
+PAGES = []
+SITE = "https://iradpalaceof.art/"
+DESC = {
+    "index.html": "The Irad Palace of Art in Iyık Janyl: Sogdian terracottas, hidden icons, the Yusup Ayyubov Hall and new Iradi art. Opening hours, exhibitions and visits.",
+    "visit.html": "Visiting the Irad Palace of Art: Cathedral Street 4, Iyık Janyl. Opening hours, tickets, the minibus from Talas and group excursions.",
+    "permanent-gallery.html": "The Permanent Gallery of the Irad Palace of Art: about 14,000 objects, from Sogdian terracottas and church silver to Soviet-era painting.",
+    "ayyubov.html": "The Yusup Ayyubov Hall: works by Yusup Ayyubov (1869-1937), the first Iradi painter in oil, from icon workshop to Talas Alatau landscapes and exile.",
+    "horses.html": "Ermek Saparbekov: Horses. A permanent display of the Chu valley painter (1878-1951) who painted horses and nothing else. Room 6a, first floor.",
+    "exhibitions.html": "Exhibitions at the Irad Palace of Art, now showing and coming soon: Amanov, Tursynova, Kadir, Yermek and the Young Artists Grant winners.",
+    "conservation.html": "The Palace of Art conservation workshop restores icons, textiles and ethnographic objects for the Palace and the parishes of the Syro-Iradi Catholic Church.",
+    "young-artists.html": "The Young Artists Grant: every year three artists under 30 living in Irad win 150,000 som, a studio for three months and an exhibition.",
+    "contact.html": "Contact the Irad Palace of Art (Irad Körköm Saraiy), Cathedral Street 4, Iyık Janyl: reception, excursions, staff and how to support the Palace.",
+    "artist1.html": "Serik Amanov: Mountains and Dreams. Vivid landscapes and Iradi folklore by the Talas painter, at the Irad Palace of Art until 31 January 2027.",
+    "artist2.html": "Layla Tursynova: Threads of History. Hand-dyed wool tapestries on Irad's heritage, at the Irad Palace of Art until 31 January 2027.",
+    "artist3.html": "Arman Kadir: History in Bronze. Bronze sculptures of scenes from Irad's history, at the Irad Palace of Art until 31 January 2027.",
+    "artist4.html": "Aisulu Yermek: Modern Rhythms. Bright abstract paintings by the Talas-based artist, at the Irad Palace of Art until 31 January 2027.",
+}
+
+
 def page(path, title, body, active=None):
     menu = "".join(f'<a href="{h}"{" class=on" if h == active else ""}>{t}</a>' for h, t in MENU)
     ex = "".join(f'<a href="{h}"><img src="{img}" width="64" height="64" alt=""> <b>{t}</b></a>'
                  for h, img, t in EXHIBITS if h != path)
+    url = SITE + ("" if path == "index.html" else path)
+    d = DESC.get(path, "")
+    seo = (f'\n    <meta name="description" content="{e(d)}">' if d else "") + (
+        f'\n    <link rel="canonical" href="{url}">'
+        f'\n    <meta property="og:title" content="{e(title)}">'
+        + (f'\n    <meta property="og:description" content="{e(d)}">' if d else "")
+        + f'\n    <meta property="og:url" content="{url}">'
+        f'\n    <meta property="og:site_name" content="Irad Palace of Art">'
+        f'\n    <meta property="og:image" content="{SITE}img/palace-horse.png">')
+    PAGES.append(path)
     out = f"""<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{e(title)}</title>
+    <title>{e(title)}</title>{seo}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>{STYLE}    </style>
 <script>window.goatcounter=new Object();goatcounter.path=p=>location.host+p;</script>
@@ -322,3 +351,9 @@ page("contact.html", "Contact - Irad Palace of Arts", """
 """, "contact.html")
 
 print("built")
+
+
+# search engines
+(ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /img/src/\n\nSitemap: {SITE}sitemap.xml\n", encoding="utf-8")
+(ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + "".join(f"  <url><loc>{SITE}{'' if p == 'index.html' else p}</loc></url>\n" for p in PAGES) + "</urlset>\n", encoding="utf-8")
