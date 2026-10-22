@@ -200,7 +200,7 @@ perm = "".join([
     work("perm-arystanov-echoes", "Echoes of the Ancients", ["Oil on canvas, 1989. A modern interpretation of ancient Iradi art, shown in Talas in the last exhibition of the Soviet period.", "<em>Artist: Marat Arystanov (born 1958)</em>"]),
     "        <h2>Contemporary (Room 9 and Courtyard)</h2>\n",
     work("perm-mukanov-khan", "The Great Khan", ["Sandstone, 1996. A carving in the old manner of Khan Abd al-Rahim Biy, who gave the land for the Church of St. Janyl in 1727. Gift of the artist for the opening of the Palace.", "<em>Artist: Aidos Mukanov (born 1951)</em>"]),
-    work("perm-mamytova-bowl", "Bowl with birds and the star", ["Slip-painted earthenware, 2014. Birds around the star of Irad, with a band of Kufic letters, from the exhibition <i>Clay and Script</i> (2015).", "<em>Artist: Chynara Mamytova (born 1972)</em>"]),
+    work("perm-mamytova-bowl", "Bowl with birds and the star", ["Slip-painted earthenware, 2014. Birds around the star of Irad, with a band of Kufic letters, from the exhibition <i>Clay and Script</i> (2015).", "<em>Artist: Chynara Mamyt (born 1972)</em>"]),
 ])
 page("permanent-gallery.html", "Permanent Gallery - Irad Palace of Arts", f"""
         <h1>Permanent Collection</h1>
@@ -301,7 +301,7 @@ page("exhibitions.html", "Exhibitions - Irad Palace of Arts", """
         <tr><td>2021</td><td><i>Collections and Conservation: Twenty-Five Years</i></td></tr>
         <tr><td>2019</td><td><i>Yusup Ayyubov, 1869-1937</i> (catalogue of the collection)</td></tr>
         <tr><td>2018</td><td><i>Felt and Form: Contemporary Iradi Textile Design</i> (Amina Yunusova, Layla Tursynova and the cooperatives)</td></tr>
-        <tr><td>2015</td><td><i>Clay and Script: Contemporary Ceramics after the Silk Road</i> (Chynara Mamytova)</td></tr>
+        <tr><td>2015</td><td><i>Clay and Script: Contemporary Ceramics after the Silk Road</i> (Chynara Mamyt)</td></tr>
         <tr><td>2010</td><td><i>Masters of Wood</i> (Almazbek Kasymov and the walnut forest workshops)</td></tr>
         <tr><td>2005</td><td><i>Ten Years of the Palace</i></td></tr>
         <tr><td>1998</td><td><i>The White Rider Comes Home</i></td></tr>
