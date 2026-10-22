@@ -190,7 +190,7 @@ perm = "".join([
     work("perm-kolkhoz-1957", "Harvest at the 'Kyzyl-Tuu' Collective Farm", ["Oil on canvas, 1957. Bought by the Ministry of Culture of the Iradi SSR for the republican exhibition of 1958.", "<em>Artist: Bakyt Sultanov (1921-1990)</em>"]),
     "        <h3>Kubat Duishenaliev (1908-1979)</h3>\n",
     "        <p>People's Artist of the Iradi SSR (1957). Born in Talas, Duishenaliev studied in Moscow from 1927 to 1930 and came home to paint the new republic: the refinery at Kobozev, the steelworks, the stadiums and the first airline over the Chu valley. His long-legged runners and workers under wide pale skies made him the best-known Iradi painter of the Soviet years. The Palace holds 23 of his paintings and his sketchbooks.</p>\n",
-    work("duishenaliev-refinery", "Refinery No. 1, Kobozev", ["Oil on canvas, 1934. Painted for the republican exhibition of the second Five-Year Plan."]),
+    work("duishenaliev-refinery", "Refinery, Vannovsky", ["Oil on canvas, 1934. Painted after a study trip to the Fergana oil fields for the republican exhibition of the second Five-Year Plan."]),
     work("duishenaliev-track", "Morning on the Track", ["Oil on canvas, 1938. Students of the Talas Pedagogical Institute training for the republican games."]),
     work("duishenaliev-night-shift", "Night Shift", ["Oil on canvas, 1949. The Kobozev metallurgical works."]),
     work("duishenaliev-above-chu", "Above the Chu", ["Oil on canvas, 1960. The Talas-Frunze airline over the collective farm fields."]),
