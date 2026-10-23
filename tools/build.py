@@ -36,6 +36,7 @@ STYLE = """
         nav.ex img { vertical-align: middle; border: 1px solid #ccc; }
         .news p { margin: 0 0 10px; }
         .news b.d { color: #7c0c16; }
+        a.tp img { vertical-align: -3px; margin-right: 4px; border: 0; border-radius: 3px; }
         @media (max-width: 640px) { .container { width: auto; margin: 0 6px; } .artwork img { float: none; display: block; } }
 """
 
@@ -107,7 +108,7 @@ def page(path, title, body, active=None):
         <nav class="ex">
             {ex}
         </nav>
-        <p class="small">Irad Palace of Art · Cathedral Street 4, Iyık Janyl · Tel. +996 32 22 4 18 07 · info@iradpalaceof.art · Last updated {UPDATED}</p>
+        <p class="small">Irad Palace of Art · Cathedral Street 4, Iyık Janyl · Tel. +996 32 22 4 18 07 · info@iradpalaceof.art · <a href="https://tulparapp.com/app/#sub=palaceofart" class="tp"><img src="img/tulpar.svg" width="14" height="14" alt="">Tulpar: @palaceofart</a> · Last updated {UPDATED}</p>
     </div>
      <p align="center"><font size="2px"><I>Hosted by <a href="https://www.attelkom.net">Attelkom</a></I></font></p>
 </body>
@@ -344,6 +345,7 @@ page("contact.html", "Contact - Irad Palace of Arts", """
         <h1>Contact</h1>
         <p>Irad Palace of Art (<i>Irad Körköm Saraiy</i>)<br>Cathedral Street 4<br>Iyık Janyl<br>Irad</p>
         <p>Reception: +996 32 22 4 18 07<br>Excursions: +996 32 22 4 18 09<br>E-mail: info@iradpalaceof.art</p>
+        <p><a href="https://tulparapp.com/app/#sub=palaceofart" class="tp"><img src="img/tulpar.svg" width="16" height="16" alt="">Follow the Palace on Tulpar: @palaceofart</a></p>
         <p><b>Director:</b> Venera Dzhumagulova<br><b>Chief curator:</b> Fr. Ephrem Tursunov<br><b>Head of conservation:</b> Elmira Abdykadyrova</p>
         <h2>Support the Palace</h2>
         <p>The Palace of Art is funded by the ISEZ budget, the Archbishopric of Iyık Janyl and foreign cultural foundations, and by the gifts of visitors. Donations can be made at the ticket desk or by bank transfer (Talasbank, ask for details).</p>
